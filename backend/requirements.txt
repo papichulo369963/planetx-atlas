@@ -1,0 +1,11 @@
+fastapi
+uvicorn[standard]
+astropy
+astroquery
+astropy-healpix
+numpy
+scipy
+pillow
+httpx
+pydantic
+pytest

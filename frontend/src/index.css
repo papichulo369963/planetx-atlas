@@ -1,0 +1,43 @@
+@import "tailwindcss";
+
+@theme {
+  --color-space-950: #050813;
+  --color-space-900: #0a1024;
+  --color-space-800: #111a36;
+  --color-space-700: #1b2750;
+  --color-space-600: #2a3a6e;
+  --color-ion: #7dd3fc;
+  --color-nova: #fbbf24;
+  --color-plasma: #f472b6;
+  --color-aurora: #34d399;
+  --font-sans: "Inter", "Segoe UI", system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", "Cascadia Code", Consolas, monospace;
+}
+
+html, body, #root { height: 100%; }
+body {
+  margin: 0;
+  background: radial-gradient(1200px 600px at 70% -10%, #1b2750 0%, #050813 60%);
+  background-color: #050813;
+  color: #e2e8f0;
+  font-family: var(--font-sans);
+}
+@layer components {
+  .panel { @apply rounded-xl border border-white/10 bg-space-900/80 backdrop-blur; }
+  .btn { @apply rounded-lg px-3 py-1.5 text-sm font-medium transition border border-white/10 bg-space-700 hover:bg-space-600 disabled:opacity-40 disabled:cursor-not-allowed; }
+  .btn-on { @apply bg-ion/20 border-ion/60 text-ion; }
+  .btn-primary { @apply rounded-lg px-3 py-1.5 text-sm font-semibold transition bg-ion text-space-950 hover:brightness-110 disabled:opacity-40; }
+  .chip { @apply inline-flex items-center gap-1 rounded-full px-2 py-0.5 text-[11px] font-medium border; }
+  .input { @apply w-full rounded-lg border border-white/10 bg-space-950/70 px-2.5 py-1.5 text-sm outline-none focus:border-ion; }
+  .label { @apply text-[11px] uppercase tracking-wider text-slate-400; }
+  .ev-observed, .ev-calculated, .ev-inferred, .ev-illustrative, .ev-unknown { @apply inline-flex items-center gap-1 rounded-full px-2 py-0.5 text-[11px] font-medium border; }
+  .ev-observed { @apply border-emerald-400/40 text-emerald-300 bg-emerald-400/10; }
+  .ev-calculated { @apply border-sky-400/40 text-sky-300 bg-sky-400/10; }
+  .ev-inferred { @apply border-amber-400/40 text-amber-300 bg-amber-400/10; }
+  .ev-illustrative { @apply border-fuchsia-400/40 text-fuchsia-300 bg-fuchsia-400/10; }
+  .ev-unknown { @apply border-slate-400/40 text-slate-300 bg-slate-400/10; }
+}
+input[type="range"] { accent-color: #7dd3fc; }
+select option { background: #0a1024; }
+::-webkit-scrollbar { width: 8px; height: 8px; }
+::-webkit-scrollbar-thumb { background: #2a3a6e; border-radius: 8px; }

@@ -1,0 +1,69 @@
+{
+  "_about": "Ground truth from space missions and meteorite analogs. Every statement carries its evidence level and a published reference. Hand-curated; check before citing.",
+  "bodies": [
+    {
+      "des": "101955", "name": "101955 Bennu", "mission": "OSIRIS-REx (NASA)", "type": "B (C-complex)",
+      "facts": [
+        {"text": "Sample returned to Earth on 24 Sep 2023 (121.6 g).", "evidence": "measured in sample", "ref": "Lauretta et al. 2024, Meteoritics & Planetary Science 59"},
+        {"text": "Rich in carbon, nitrogen and hydrated phyllosilicates (serpentine, smectite); similar to but distinct from CI chondrites.", "evidence": "measured in sample", "ref": "Lauretta et al. 2024, MAPS 59"},
+        {"text": "Bulk density 1.19 g/cm3: a porous rubble pile.", "evidence": "measured (gravity and shape)", "ref": "Daly et al. 2020, Science Advances 6"},
+        {"text": "Hydrated minerals hold chemically bound water; this does not imply ice or extractable free water.", "evidence": "clarification", "ref": "-"}
+      ],
+      "shape_model": "NASA 3D Resources / PDS (OSIRIS-REx)"
+    },
+    {
+      "des": "162173", "name": "162173 Ryugu", "mission": "Hayabusa2 (JAXA)", "type": "Cb (C-complex)",
+      "facts": [
+        {"text": "Samples (5.4 g) returned in Dec 2020; chemical composition similar to CI chondrites.", "evidence": "measured in sample", "ref": "Yokoyama et al. 2023, Science 379, eabn7850"},
+        {"text": "Dominated by phyllosilicates, carbonates and magnetite formed by aqueous alteration.", "evidence": "measured in sample", "ref": "Nakamura et al. 2023, Science 379, eabn8671"}
+      ],
+      "shape_model": "JAXA / PDS (Hayabusa2)"
+    },
+    {
+      "des": "25143", "name": "25143 Itokawa", "mission": "Hayabusa (JAXA)", "type": "S",
+      "facts": [
+        {"text": "Particles returned in 2010 are consistent with thermally metamorphosed LL ordinary chondrites.", "evidence": "measured in sample", "ref": "Nakamura et al. 2011, Science 333, 1113"}
+      ],
+      "shape_model": "PDS (Hayabusa)"
+    },
+    {
+      "des": "16", "name": "16 Psyche", "mission": "Psyche (NASA, arrival planned for 2029)", "type": "M / Xk",
+      "facts": [
+        {"text": "Bulk density ~3.9 g/cm3; candidate exposed metallic core or metal-silicate mixture.", "evidence": "inferred (mass and volume)", "ref": "Shepard et al. 2021, Planetary Science Journal 2, 125"},
+        {"text": "The actual composition (metal fraction) is unknown until the mission arrives.", "evidence": "unknown", "ref": "-"}
+      ]
+    },
+    {
+      "des": "433", "name": "433 Eros", "mission": "NEAR Shoemaker (NASA)", "type": "S",
+      "facts": [
+        {"text": "X-ray and gamma-ray spectroscopy consistent with ordinary chondrites (with surface sulfur depletion).", "evidence": "observed at surface", "ref": "Nittler et al. 2001, Meteoritics & Planetary Science 36"}
+      ]
+    },
+    {
+      "des": "65803", "name": "65803 Didymos / Dimorphos", "mission": "DART (NASA) / Hera (ESA)", "type": "S",
+      "facts": [
+        {"text": "The DART impact (26 Sep 2022) shortened Dimorphos' orbital period by ~33 min.", "evidence": "measured", "ref": "Thomas et al. 2023, Nature 616"},
+        {"text": "S-type spectrum consistent with L/LL ordinary chondrites.", "evidence": "observed at surface", "ref": "Rivkin et al. 2023, Planetary Science Journal"}
+      ]
+    },
+    {
+      "des": "4", "name": "4 Vesta", "mission": "Dawn (NASA)", "type": "V",
+      "facts": [
+        {"text": "Parent body of the HED meteorites (howardites, eucrites, diogenites); differentiated body with a core.", "evidence": "observed at surface + meteorite analogy", "ref": "De Sanctis et al. 2012, Science 336; Russell et al. 2012, Science 336"}
+      ]
+    },
+    {
+      "des": "1", "name": "1 Ceres", "mission": "Dawn (NASA)", "type": "C",
+      "facts": [
+        {"text": "Ammoniated phyllosilicates on the surface; carbonate deposits in Occator crater.", "evidence": "observed at surface", "ref": "De Sanctis et al. 2015, Nature 528; De Sanctis et al. 2016, Nature 536"}
+      ]
+    }
+  ],
+  "meteorite_analogs": [
+    {"taxonomy": "C / Cb / Ch / B", "meteorites": "CI / CM carbonaceous chondrites", "note": "Spectral analogy, not identity. Ch: 0.7 um band linked to Fe-bearing phyllosilicates."},
+    {"taxonomy": "S / Q", "meteorites": "Ordinary chondrites (H, L, LL)", "note": "Confirmed for Itokawa by returned samples."},
+    {"taxonomy": "V", "meteorites": "HED (basaltic achondrites)", "note": "Linked to Vesta."},
+    {"taxonomy": "M / X", "meteorites": "Iron meteorites, enstatite chondrites", "note": "Ambiguous: the X complex includes metallic and non-metallic bodies."},
+    {"taxonomy": "D / P", "meteorites": "Possibly Tagish Lake (C2-ung)", "note": "Primitive, organic-rich; weak analogy."}
+  ]
+}
